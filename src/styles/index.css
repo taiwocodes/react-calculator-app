@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas,
+		'Courier New', monospace;
+}
+
+button {
+	border-radius: 0;
+	border: 0.2px solid #ddd;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+button:hover {
+	background-color: #ddd;
+}
+
+.calc_layout {
+	display: grid;
+	grid-template-columns: repeat(4, 60px);
+	grid-template-rows: repeat(6, 60px);
+	width: min-content;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.span-all {
+	grid-column: span 4;
+}
+
+.clear {
+	background: rgb(170, 1, 1);
+	color: white;
+	border-color: rgb(170, 1, 1);
+}
+
+.clear:hover {
+	background: rgb(139, 0, 0);
+}
+
+.output {
+	font-size: large;
+	text-align: right;
+	color: black;
+}
+
+.output::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: black;
+}
+.output::-moz-placeholder {
+	/* Firefox 19+ */
+	color: black;
+}
+.output:-ms-input-placeholder {
+	/* IE 10+ */
+	color: black;
+}
+.output:-moz-placeholder {
+	/* Firefox 18- */
+	color: black;
+}
