@@ -15,7 +15,6 @@ code {
 button {
 	border-radius: 0;
 	border: 0.2px solid #ddd;
-	cursor: pointer;
 	font-weight: 600;
 }
 
@@ -23,25 +22,16 @@ button:hover {
 	background-color: #ddd;
 }
 
-.calc_layout {
+.calc-layout {
 	display: grid;
 	grid-template-columns: repeat(4, 60px);
 	grid-template-rows: repeat(6, 60px);
 	width: min-content;
 	margin: auto;
-	margin-top: 50px;
 }
 
 .span-all {
 	grid-column: span 4;
-}
-
-.span-3 {
-	grid-column: span 3;
-}
-
-.icon {
-	height: 20px;
 }
 
 .clear {
@@ -51,28 +41,33 @@ button:hover {
 }
 
 .clear:hover {
-	background: rgb(139, 0, 0);
+	background-color: rgb(139, 0, 0);
 }
 
 .output {
-	font-size: large;
+	/* width: 100%; */
+	font-size:large;
 	text-align: right;
 	color: black;
 }
 
+
+/* browser compatibility
+--Chrome/Opera/Safari
+--Firefox 19+
+--IE 10+
+--Firefox 18-
+respectively */
+
 .output::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
-	color: black;
+color: black;
 }
 .output::-moz-placeholder {
-	/* Firefox 19+ */
 	color: black;
 }
-.output:-ms-input-placeholder {
-	/* IE 10+ */
+:-ms-input-placeholder {
 	color: black;
 }
-.output:-moz-placeholder {
-	/* Firefox 18- */
-	color: black;
+:-moz-placeholder {
+color: black;
 }
