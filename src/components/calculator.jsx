@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Button from '../components/button';
 import Output from './output';
 import '../styles/index.css';
